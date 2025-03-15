@@ -5,7 +5,7 @@ import time
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-API_BASE_URL = "http://www.omdbapi.com/?apikey=CS546&"
+API_BASE_URL = "http://www.omdbapi.com/?apikey=[key here]&" # TODO: use env file for key
 
 def get_box_office(imdb_id):
     url = f"{API_BASE_URL}i={imdb_id}"
